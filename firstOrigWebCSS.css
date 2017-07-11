@@ -1,0 +1,489 @@
+/*
+Better practice to make an @font-face for each font.
+Otherwise, it won't work. And better to declare all font-faces in beginning of CSS class
+*/
+@font-face {
+	font-family: "Roboto-Thin";
+	src: url("Fonts/Roboto/Roboto-Thin.woff2") format("woff2"),
+       	 url("Fonts/Roboto/Roboto-Thin.woff") format("woff"),
+       	 url("Fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto-Light";
+	src: url("Fonts/Roboto/Roboto-Light.woff2") format("woff2"),
+       	 url("Fonts/Roboto/Roboto-Light.woff") format("woff"),
+       	 url("Fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url("Fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+       	 url("Fonts/Roboto/Roboto-Regular.woff") format("woff"),
+       	 url("Fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoMono-Regular";
+	src: url("Fonts/Roboto_Mono/RobotoMono-Regular.woff2") format("woff2"),
+       	 url("Fonts/Roboto_Mono/RobotoMono-Regular.woff") format("woff"),
+       	 url("Fonts/Roboto_Mono/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoMono-Light";
+	src: url("Fonts/Roboto_Mono/RobotoMono-Light.woff2") format("woff2"),
+       	 url("Fonts/Roboto_Mono/RobotoMono-Light.woff") format("woff"),
+       	 url("Fonts/Roboto_Mono/RobotoMono-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoMono-Thin";
+	src: url("Fonts/Roboto_Mono/RobotoMono-Thin.woff2") format("woff2"),
+       	 url("Fonts/Roboto_Mono/RobotoMono-Thin.woff") format("woff"),
+       	 url("Fonts/Roboto_Mono/RobotoMono-Thin.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoSlab-Regular";
+	src: url("Fonts/Roboto_Slab/RobotoSlab-Regular.woff2") format("woff2"),
+       	 url("Fonts/Roboto_Slab/RobotoSlab-Regular.woff") format("woff"),
+       	 url("Fonts/Roboto_Slab/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoSlab-Light";
+	src: url("Fonts/Roboto_Slab/RobotoSlab-Light.woff2") format("woff2"),
+       	 url("Fonts/Roboto_Slab/RobotoSlab-Light.woff") format("woff"),
+       	 url("Fonts/Roboto_Slab/RobotoSlab-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoSlab-Thin";
+	src: url("Fonts/Roboto_Slab/RobotoSlab-Thin.woff2") format("woff2"),
+       	 url("Fonts/Roboto_Slab/RobotoSlab-Thin.woff") format("woff"),
+       	 url("Fonts/Roboto_Slab/RobotoSlab-Thin.ttf") format("truetype");
+}
+
+body {
+	background-color: white;
+	/*Allows nav bar to extend full width of screen*/
+	margin: 0;
+	padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+div.menuListDivId {
+
+}
+
+#topMenuListId {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+}
+
+li.topMenuClass {
+    float: left;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.active {
+    background-color: #b49f72;
+}
+
+li a:hover {
+	background-color: #b49f72;
+}
+
+div.tech {
+	width: 100%;
+	height: 800px;
+	background-image: url("Images/techBgDark.jpg");
+	background-size: 100% 100%;
+  	top: 0;
+  	left: 0;
+}
+
+#aboutId {
+	float: right;
+	margin-right: 100px;
+	font-family: "Roboto-Thin", sans-serif;
+	color: white;
+	font-size: 80px;
+	font-weight: 100;
+	/* Underlining text and coloring it
+	text-decoration: underline;
+	-webkit-text-decoration-color: #ddba2d;
+	text-decoration-color: #ddba2d;
+	*/
+}
+
+#welcomeId {
+	float: right;
+	font-family: "Roboto-Thin", sans-serif;
+	font-size: 13px;
+	color: #ddba2d;
+	margin-right: 100px;
+	font-weight: 100;
+	text-decoration: underline;
+	-webkit-text-decoration-color: white;
+	text-decoration-color: white;
+}
+
+div.break {
+	width: 100%;
+	height: 450px;
+}
+
+#welcomeInfoId {
+	width: auto;
+  	height: 400px;
+  	position: absolute;
+  	background-color: #ece9e2;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	z-index: 10;
+  	margin-left: 2%;
+  	margin-top: 720px;
+}
+
+div.container {
+  	width: 100%;
+  	height: 670px;
+}
+
+#aboutMeId {
+	font-family: "Roboto-Thin", sans-serif;
+	text-align: center;
+	margin-top: 60px;
+}
+
+#aboutMeLineId {
+	height: 30px;
+	width: 500px;
+	margin-left: 370px;
+	margin-top: -50px;
+	stroke: black;
+	stroke-width: 1;
+}
+
+#aboutMeParId {
+	font-family: "Roboto-Thin", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 35px;
+}
+
+#academicsId {
+	width: 50%;
+	height: 400px;
+	background-color: #A59780;
+	float: left;
+}
+
+#academicsHeaderId {
+	color: white;
+	font-family: "Roboto-Thin", sans-serif;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#iphoneImgId {
+	width: 48%;
+	height: 400px;
+	float: left;
+}
+
+#academicsHeaderLineId {
+	height: 30px;
+	width: 300px; 
+	margin-left: 25%;
+	margin-top: -5px;
+	stroke: white;
+	stroke-width: 1;
+}
+
+#appleProdsId {
+	width: 48%;
+	height: 450px;
+	background-image: url("Images/appleProds.jpg");
+	background-size: 100% 100%;
+	margin-left: 2%;
+	float: left;
+}
+
+#courseHeaderId {
+	color: white;
+	font-family: "Roboto-Thin", sans-serif;
+	font-size: 40px;
+	margin-top: 25px;
+	margin-left: 23px;
+}
+
+#coursesId {
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	margin-top: -10px;
+}
+
+ul.coursesListId {
+	font-family: "Roboto-Thin";
+	display: inline-block;
+	color: white;
+	list-style-type: circle;
+    margin-left: 1px;
+    font-size: 13px;
+}
+
+#portfolioIntroId {
+	width: 50%;
+	height: 225px;
+	background-color: #ece9e2;
+	float: left;
+}
+
+#portfolioHeaderId {
+	color: black;
+	font-family: "Roboto-Thin", sans-serif;
+	margin-top: 25px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#portfolioHeaderLineId {
+	height: 30px;
+	width: 300px; 
+	margin-left: 25%;
+	margin-top: -5px;
+	stroke: black;
+	stroke-width: 1;
+}
+
+#portfolioDescriptionId {
+	color: black;
+	font-family: "RobotoSlab-Light";
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: -6px;
+	line-height: 29px;
+}
+
+#portfolioLinksId {
+	width: 50%;
+	height: 225px;
+	float: left;
+	background-color: #928571;
+}
+
+#gitHubButton {
+	font-family: "Roboto-Regular";
+	background-color: #928571;
+    border: solid white;
+    color: white;
+    width: 131px;
+    /*Top, right, bottom, left*/
+    padding: 60px 70px 60px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*Top, right, bottom, left*/
+    margin: 40px 20px 0px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#gitHubButton:hover {
+	color: #928571;
+	background-color: white;
+}
+
+#linkedInButton {
+	font-family: "Roboto-Regular";
+	background-color: #928571;
+    border: solid white;
+    color: white;
+    width: 131px;
+    /*Top, right, bottom, left*/
+    padding: 60px 70px 60px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*Top, right, bottom, left*/
+    margin: 40px 20px 0px 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#linkedInButton:hover {
+	color: #928571;
+	background-color: white;
+
+}
+
+#hobbiesDivId {
+	width: 100%;
+	height: 344px;
+	background-color: #A59780;
+	display: inline-block;
+}
+
+#hobbiesTitleId {
+	font-family: "Roboto-Thin";
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#hobbiesTitleLineId {
+	height: 30px;
+	width: 300px; 
+	margin-left: 38%;
+	margin-top: -5px;
+	stroke: white;
+	stroke-width: 1;
+}
+
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.4s;
+    width: 24%;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+div.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+div.cardContainer {
+    padding: 2px 16px;
+}
+
+img.hobbyImagesId {
+	float: left;
+	border-radius: 5px 5px 0 0;
+}
+
+h4.cardTextId {
+	font-family: "RobotoSlab-Thin";
+	font-size: 25px;
+	text-align: center;
+	color: #A59780;
+}
+
+#contactId {
+	width: 45%;
+	height: 550px;
+	background-color: #ece9e2;
+	float: left;
+}
+
+#contactTitleId {
+	font-family: "Roboto-Thin", sans-serif;
+	text-align: center;
+	margin-top: 90px;
+}
+
+#contactTitleLineId {
+	height: 30px;
+	width: 400px;
+	margin-left: 92px;
+	margin-top: -50px;
+	stroke: black;
+	stroke-width: 1;
+}
+
+#rohan {
+	width: 55%;
+	height: 550px;
+	background-image: url("Images/rohan.jpg");
+	background-size: 100% 100%;
+	float: left;
+}
+
+#parallaxId {
+    /* The image used */
+    background-image: url("Images/parallaxBg.jpg");
+    /* Set a specific height */
+    min-height: 200px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.parallaxTextId {
+	font-family: "Roboto-Thin";
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+#footerId {
+	height: 60px;
+	width: 100%;
+	display: inline-block;
+}
+
+#footerTextId {
+	font-family: "Roboto-Thin";
+	font-size: 12px;
+	color: gray;
+	margin-top: 22px;
+	text-align: center;
+}
+
+#mailButton {
+	font-family: "Roboto-Regular";
+	background-color: #ece9e2;
+    border-style: solid;
+    border-color: #928571;
+    color: #928571;
+    width: 131px;
+    /*Top, right, bottom, left*/
+    padding: 60px 70px 60px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*Top, right, bottom, left*/
+    margin: 40px 20px 0px 25%;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#mailButton:hover {
+	color: #ece9e2;
+	background-color: #928571;
+}

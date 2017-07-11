@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Rohan Sharma</title>
+    	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    	<link rel="stylesheet" type="text/css" href="firstOrigWebCSS.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   		<!--Used for when in-page link is clicked. Will scroll to location smoothly/slowly-->
+		<script>
+			$(document).ready(function(){
+  			// Add smooth scrolling to all links
+  				$("a").on('click', function(event) {
+    			// Make sure this.hash has a value before overriding default behavior
+    				if (this.hash !== "") {
+      				// Prevent default anchor click behavior
+     		 			event.preventDefault();
+     				 	// Store hash
+      					var hash = this.hash;
+      					// Using jQuery's animate() method to add smooth page scroll
+     					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      						}, 850, function(){
+        				// Add hash (#) to URL when done scrolling (default click behavior)
+        						window.location.hash = hash;
+      					});
+    				} // End if
+ 				 });
+			});
+		</script>
+		<!--Making sure only one li element is active in the div-->
+		<script>
+			$(document).ready(function() {
+   				var $listItems = $('div.menuListDivId li');
+    			$listItems.click(function() {
+       				$listItems.removeClass('active'); 
+        			$(this).addClass('active'); 
+    			});
+ 			});
+		</script>
+	</head>
+<body>
+<div class="menuListDivId">
+  <ul id="topMenuListId">
+    <li class="topMenuClass active"><a href="#welcomeInfoId">About</a></li>
+    <li class="topMenuClass"><a href="#portfolioIntroId">Portfolio</a></li>
+    <li class="topMenuClass"><a href="#hobbiesDivId">Hobbies</a></li>
+    <li class="topMenuClass"><a href="#contactId">Contact</a></li>
+    <img src="Images/rohanLogo.jpg" style="height: 46px; float: right;margin-right: 1%;">
+  </ul>
+</div>
+<!--Container for overlapping elements-->
+<div class="container">
+	<div class="tech">
+		<br><br><br><br><br><br>
+		<h1 id="welcomeId">WELCOME</h1>
+		<br><br><br><br><br><br>
+		<h1 id="aboutId">About</h1>
+	</div>
+	<div id="welcomeInfoId">
+		<div>
+			<h1 id="aboutMeId">ABOUT ME</h1>
+			<svg id="aboutMeLineId">
+  				<line x1="0" y1="0" x2="500" y2="0"/>
+  			</svg>
+			<div id="aboutMeParId">
+				<p>Hi, I'm Rohan!</p>
+				<p>I like to program and learn new things.</p>
+				<p>My favorite programming languages are C++, Java, Swift, Objective-C, HTML, CSS, and JavaScript.</p>
+				<p>I also enjoy making mobile applications for iOS and Android!</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="break"></div>
+<div style="width: 100%; height: 400px;">
+	<div id="academicsId">
+		<h1 id="academicsHeaderId">ACADEMICS</h1>
+		<svg id="academicsHeaderLineId">
+  				<line x1="0" y1="0" x2="300" y2="0"/>
+  		</svg>
+  		<p id="courseHeaderId">Relevant courses I have taken</p>
+  		<br>
+  		<div id="coursesId">
+  			<ul class="coursesListId">
+  				<li>Data Structures and Object Oriented Design</li>
+  				<br>
+  				<li>Principles of Software Development</li>
+  				<br>
+  				<li>Intro to Embedded Systems</li>
+  				<br>
+  				<li>Intro to Algorithms and the Theory of Computing</li>
+  				<br>
+  			</ul>
+  			<ul class="coursesListId">
+  				<li>Discrete Mathematics</li>
+  				<br>
+  				<li>Calculus III</li>
+  				<br>
+  				<li>Physics: Mechanics and Thermodynamics</li>
+  				<br>
+  				<li >Advanced Engineering Mathematics</li>
+  				<br>
+  			</ul>
+  		</div>
+	</div>
+	<img id="iphoneImgId" src="Images/iphone.jpg">
+</div>
+
+<div id="appleProdsId"></div>
+<div id="portfolioIntroId">
+	<h1 id="portfolioHeaderId">PORTFOLIO</h1>
+	<svg id="portfolioHeaderLineId">
+  			<line x1="0" y1="0" x2="300" y2="0"/>
+  	</svg>
+  	<p id="portfolioDescriptionId">I have worked on a lot of personal projects. Some were for my classes, others for hackathons, and the rest were just for fun! The majority of my projects are mobile applications for both iOS and Android. Below are useful links for finding out more about me and my projects.</p>
+</div>
+<div id="portfolioLinksId">
+	<!--href is the link that webpage will go to when button is clicked-->
+	<a href="https://www.linkedin.com/in/sharmaro" target="_blank" id="linkedInButton">LINKEDIN</a>
+	<a href="https://www.github.com/sharmaro" id="gitHubButton" target="_blank">GITHUB</a>
+</div>
+
+<div id="hobbiesDivId">
+	<h1 id="hobbiesTitleId">HOBBIES</h1>
+	<svg id="hobbiesTitleLineId">
+  			<line x1="0" y1="0" x2="300" y2="0"/>
+  	</svg>
+  	<br>
+  	<div class="card">
+  		<img class="hobbyImagesId" src="Images/gaming.jpg" alt="Gaming" style="width: 100%; height: 197px;">
+  		<div class="cardContainer">
+    		<h4 class="cardTextId"><b>Playing video games</b></h4> 
+  		</div>
+	</div>
+	<div class="card">
+  		<img class="hobbyImagesId" src="Images/exercising.jpg" alt="Working out" style="width: 100%; height: 197px;">
+  		<div class="cardContainer">
+    		<h4 class="cardTextId"><b>Working out</b></h4> 
+  		</div>
+	</div>
+  	 <div class="card">
+  		<img class="hobbyImagesId" src="Images/driving.jpg" alt="Driving" style="width: 100%; height: 197px;">
+  		<div class="cardContainer">
+    		<h4 class="cardTextId"><b>Driving</b></h4> 
+  		</div>
+	</div>
+	<div class="card">
+  		<img class="hobbyImagesId" src="Images/reading.jpg" alt="Reading" style="width: 100%; height: 197px;">
+  		<div class="cardContainer">
+    		<h4 class="cardTextId"><b>Reading</b></h4> 
+  		</div>
+	</div>
+</div>
+<div id="parallaxId"></div>
+<div id="contactId">
+	<h1 id="contactTitleId">CONTACT ME</h1>
+	<svg id="contactTitleLineId">
+  		<line x1="0" y1="0" x2="500" y2="0"/>
+  	</svg>
+  	<p style="color: black;font-family: 'Roboto-Thin'; margin: 10px 50px 10px 50px;text-align: justify;">Please feel free to reach out to me if you have any comments or questions. You can also just say hi!</p>
+  	<p style="color: black;font-family: 'Roboto-Thin'; margin: 40px 50px 10px 50px;text-align: justify;">Click the button to send me an email</p>
+  	<a href="mailto:sharmaro@usc.edu" id="mailButton" target="_blank">EMAIL</a>
+</div>
+<div id="rohan"></div>
+<div class="break"></div>
+<div id="parallaxId"></div>
+<footer id="footerId">
+  <p id="footerTextId">© Rohan Sharma 20017. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
